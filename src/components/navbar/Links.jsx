@@ -28,7 +28,6 @@ function Links() {
   const pathName = usePathname();
   const [session, setSession] = useState(false);
   const [isAdmin, setIsAdmin] = useState(true);
-  const [openMenu, setOpenMenu] = useState(false);
   const [open, setOpen] = useState(false);
   function handleLogin() {
     setSession(!session);

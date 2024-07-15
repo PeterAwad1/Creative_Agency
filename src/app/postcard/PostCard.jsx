@@ -11,6 +11,8 @@ function PostCard({ image, title, des, date }) {
             alt={title}
             fill
             className="object-cover rounded-md"
+            sizes="100vw, 300px"
+            priority
           />
         </div>
         <p className="text-gray-400 text-xs -rotate-90 w-[100px]">{date}</p>

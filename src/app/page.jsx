@@ -29,12 +29,19 @@ const Home = () => {
         </div>
         {/* Brand Image Section */}
         <div className="relative w-[100%] lg:w-[500px] h-[50px] opacity-50 grayscale-[100%] ">
-          <Image src="/brands.png" fill alt="" />
+          <Image src="/brands.png" fill alt="" sizes="100vw ,50px" />
         </div>
       </div>
       {/* Hero Image Section */}
       <div className="hidden relative lg:block lg:w-[500px] lg:h-[500px] lg:flex-1">
-        <Image src="/hero.gif" fill alt="" className="object-contain" />
+        <Image
+          src="/hero.gif"
+          fill
+          alt=""
+          className="object-contain"
+          sizes="(max-width: 768px) 100vw, 500px"
+          priority
+        />
       </div>
     </div>
   );

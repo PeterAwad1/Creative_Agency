@@ -6,7 +6,14 @@ function ContactPage() {
     <div className="flex justify-between items-center gap-24">
       {/* Image Contact */}
       <div className="hidden relative md:block md:w-[500px] md:h-[500px] md:flex-1">
-        <Image src="/contact.png" alt="" fill className="object-contain" />
+        <Image
+          src="/contact.png"
+          alt=""
+          fill
+          className="object-contain"
+          sizes="(max-width: 768px) 100vw, 500px"
+          priority
+        />
       </div>
       <form className="flex-1 flex flex-col jsutify-between items-center gap-5">
         <input

@@ -36,7 +36,14 @@ function AboutPage() {
       </div>
       {/* About Image */}
       <div className="hidden relative md:block md:w-[500px] md:h-[500px] md:flex-1">
-        <Image src="/about.png" alt="" fill className="object-contain" />
+        <Image
+          src="/about.png"
+          alt=""
+          fill
+          className="object-contain"
+          sizes="(max-width: 768px) 100vw, 500px"
+          priority
+        />
       </div>
     </div>
   );
