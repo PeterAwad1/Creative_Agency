@@ -1,5 +1,6 @@
 import Button from "@/components/button/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -23,9 +24,12 @@ const Home = () => {
           <button className="bg-btn text-white p-2 cursor-pointer rounded-md hover:scale-105 focus:outline-none">
             Learn More
           </button>
-          <button className="bg-white text-black p-2 cursor-pointer rounded-md hover:scale-105 focus:outline-none">
+          <Link
+            href="/contact"
+            className="bg-white text-black p-2 cursor-pointer rounded-md hover:scale-105 focus:outline-none"
+          >
             Contact
-          </button>
+          </Link>
         </div>
         {/* Brand Image Section */}
         <div className="relative w-[100%] lg:w-[500px] h-[50px] opacity-50 grayscale-[100%] ">
@@ -33,14 +37,13 @@ const Home = () => {
         </div>
       </div>
       {/* Hero Image Section */}
-      <div className="hidden relative lg:block lg:w-[500px] lg:h-[500px] lg:flex-1">
+      <div className="hidden relative md:block md:w-[500px] md:h-[500px] lg:flex-1">
         <Image
           src="/hero.gif"
           fill
           alt=""
           className="object-contain"
           sizes="(max-width: 768px) 100vw, 500px"
-          priority
         />
       </div>
     </div>
